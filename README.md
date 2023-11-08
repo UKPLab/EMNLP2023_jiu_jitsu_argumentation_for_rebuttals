@@ -43,10 +43,9 @@ The top level also has the folder ```canonical_rebuttals_and_descs```. This cont
 ### Codes
 The codes used in this work are contained in the folder ```codes```.  Each of the tasks has separate README files inside.
 ```
-├── end2end_review_to_canonical_rebuttal (code for the end-to-end canonical rebuttal generation task)
-├── rebuttal_identification (code for rebuttal identification task)
-├── rebuttal_scoring (code for the scoring task)
-├── review_to_desc (code for the review-to-description identification task)
+├── end2end_review_to_canonical_rebuttal (canonical rebuttal generation task)
+├── rebuttal_scoring (scoring task)
+├── review_to_desc (review-to-description identification task)
 ```
 
 
