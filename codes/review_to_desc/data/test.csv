@@ -1,0 +1,468 @@
+reviews	descs
+They start from Equation (4) which is incorrectly denoted as the log-marginal distribution while it is the same conditional distribution introduced in Equation (3) with the extra summation for all the available data points.	generalizability of method on datasets created from different distributions is questionable
+It seems there is no conclusion to take away from the experiments in section 5 (convolutions).	Lack of discussion of experimental setup (conclusion from experiments, poor experimental details, etc)
+The authors do not explicitly define continual learning, incremental learning, and catastrophic forgetting problem.	Unclear description of method
+Generally speaking it seems like a lot of technicalities for a relatively simple result:	Limited impact of results
+ii) Although the idea of generating contrastive explanations is quite interesting, it is not that novel.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+https://arxiv.org/abs/1802.05983	Incorrect citation
+One set of experiments that I think would be interesting is aimed at understanding the distribution-matching part.	Experimental study not strong enough
+Furthermore, I found the description ambiguous, preventing me from understanding how exactly the permutation head output is used in Eq 5.	Unclear description of method
+First, In Theorem 2, which seems to be a main result of the paper, the authors were concerned with the condition when W_{ji} >0, but there is not conclusion if W_{ji} =0.	Generalizability of results in terms of method parameters (only applies for some number of parameters, only for these type of matrices, etc)
+* Equations (1, 2): z and \phi are not consistently boldfaced	Unclear description of method
+This suggests that the strictly incremental training methodology indeed forced the network to learn better generalizations	Incomplete details on perfromance of the method
+Thus, the evidence of the experiments is not enough.	Experimental study not strong enough
+The idea of having a separate class for out-distribution is a very interesting idea but unfortunately previously explored.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+I understand why a human who needs to saccade back and forth between the two groups of objects might lose track of the objects that have been paired so far, but I don't understand why that would affect the architecture in question.	Incomplete details on perfromance of the method
+(3) I am slightly concerned about the sample complexity of keeping track of the probability of worker i finishing goal g within t steps with a bonus b. This scales linearly in parameters which usually would be large (such as the number of time-steps).	Correctness of algorithm proposed
+Overall, this appears to be a board-line paper with weak novelty.	Overall not original enough (primary claim, limited evaluation, limited novelty)
+1. Could you comment on the differences in your setup in Section 4.1 compared to the VAEAC paper? I’ve noticed that the results you report for this method significantly differ from the original paper, e.g. for VAEAC on Phishing dataset you report PFC of 0.24, whereas the original paper reports 0.394; for Mushroom it’s 0.403 vs. 0.244. I’ve compared the experimental details yet couldn’t find any differences, for example the missing rate is 0.5 in both papers.	* The differences between UNIT (GAN; C-po) and UNIT (MMD; C-po) in Table 1 seem very small and I'm not convinced that they are significant. Why does the MMD version constitute an improvement? Or is it simply more stable to train?
+- why do you need a conditional GAN discriminator, if you already model similarity by L1?	Correctness of algorithm proposed
+In this case, it is basically a GD, not SGD any more.	Correctness of algorithm proposed
+"Can you explain somewhere exactly what you mean when you say ""learning dynamics of deep learning""? Given the specific nature of the results presented in the paper it would be nice to be precise also when it comes to the overall topic under study."	Missing details for reproducibility of result
+Listing related work is no the same as describing similarities and differences compared to previous methods.	Missing literature review (some literature not included, misses baseline citations, etc)
+It would be good to have some experiments in the sequence to sequence setting to understand if the obtained complexities are in fact what one would expect in practice.	Experimental study not strong enough
+But again, it's not super clear how the paper estimates this derivative.	Unclear description of method
+The combination of these two methods seems straightforward.	Limited novelty in theoretical contribution
+Thus the metric is not a proper metric.	Correctness of algorithm proposed
+"- There are better words than ""decent"" to describe the performance of DARTS, as it's very similar to the results in this work!"	Improper explanation of results (as in advantages, why are results better, etc)
+- In Theorem 4.7 an expectation on g(x_a) is missing	Correctness of algorithm proposed
+- The analysis has focused on a very simple case of having a linear discriminator which for example in WGAN, forces the first moments to match. How does the analysis extend to more realistic cases?	Lack of analysis
+Yet the experiments considered in the paper are limited to very few time series.	Experimental study not strong enough
+As pointed out by R2, with depth there are a lot more number of possible ways in which one could carve out decision boundaries to separate data points, thus, it is not clear that the loose linear upper bound holds Specifically, as one might expect with depth it could be possible that linear capacity increase is a lower bound (I am not suggesting that it is, but that possibility should be considered and explained in the paper).	As pointed out by R2, with depth there are a lot more number of possible ways in which one could carve out decision boundaries to separate data points, thus, it is not clear that the loose linear upper bound holds Specifically, as one might expect with depth it could be possible that linear capacity increase is a lower bound (I am not suggesting that it is, but that possibility should be considered and explained in the paper).
+The reported FID for CIFAR10 using WGAN-GP is 54.4, which seems to be a bit high.	Incorrect assumptions as compared to related work
+typo in absolute in caption of Fig 4	Incomplete ablation in terms of tables and figures
+- The authors should make a distinction on what kinds of attack is considered: white box, black box or grey box.	Incomplete details on perfromance of the method
+"Section 2.1 is where the method is proposed, yet most of the descriptions there are unclear. Without these details it is impossible to judge the novelty of the ""rule-based concept extractor"", which is the key technical innovation."	Unclear description of method
+Thus, based on this approach, the reconstruction image may not be optimal with respect to the resolution which might be critical for cryo-EM reconstruction.	Correctness of algorithm proposed
+The proposed diversity measuring metric is lacking both in terms of experimental proofs and intuitive motivations.	Experimental study not strong enough
+"The tasks are explicitly designed to exploit these additional parameters - so framing the synthetic experiments as, ""here are some simple functions for which we would need the additional parameters that we define"" makes sense; but arguing that Hartford et al. ""fail approximating rather simple functions"" (page 7) is misleading because the functions are precisely the functions on which you would expect Hartford et al. to fail (because it's designed for a different setting)."	Missing baselines
+The authors state that proposed framework can be added to any baseline model, but miss to clearly mention the limitations.	Correctness of algorithm proposed
+However, this limits the novelty of the results relative to existing literature.	Not enough originality in results (not surprising)
+In Fig. 3 the author claim that the proposed method dominates the other methods in terms of privacy and utility but this is not correct.	Incorrect claims about performance in tables and figures
+Many more can be said in all the figures.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+Simply because for continuous variables similar experiments have been reported before	Not enough novelty in experiments (seems similar to previous work)
+In equations 1 and 2, should a, b be written in capital? Since they represent random variables.	Unclear description of method
+Three of these methods, i.e. Lime, GradCam, PDA, are not designed for producing contrastive explanations, so I am not sure to what extend this comparison is appropriate.	Missing theoretical comparisons
+It is also not clear to me why these problems are important.	Limited contribution in problem definition
+Yet the metrics proposed depend on supervision in the target domain.	Incomplete details on perfromance of the method
+- How much does the image matter for the single-image data set?	Less datasets used
+I believe the results all relate to inference but it would be good to get an overview of the impact of training time as well.	generalizability of results is questionable
+The cited Berrett and Samworth MI test uses a permutation approach to obtaining the test threshold, not an asymptotic approach  (see the results of Section 4 of that paper).	Incorrect assumptions as compared to related work
+(4) For the error-specific attack task, it would be better to provide an ablation experiment.	Experimental study not strong enough
+I also have concerns about the independence assumption in their sampling distribution (Section 3.2), and the fact that their experiments use the same set of (untuned) hyperparameters for each method.	Concerns regarding correctness of methods (assumption, budget, etc)
+- Sec 3.3 the argmin is a set, then it is LMO $\in$ argmin.	Correctness of algorithm proposed
+It might be more fruitful if these linear combinations were learned or sub-senses of words (e.g. [1]).	Incomplete details on perfromance of the method
+- The use of RAM is a fairly serious limitation of your experimental setting in my view. You should include results also for the pixel space, even if negative.	Need more experimental results
+PointNet is a specialization of graphnets and GraphNetST should be added as a baseline with reasonable adjacency.	Incorrect assumptions as compared to related work
+These points remain me puzzled regarding either practical or theoretical application of the result. It would be great if authors could elaborate.	Missing details for reproducibility of result
+Is it a combination of DGR and HAT with some capacity expansion?	Limited novelty in theoretical contribution
+- In remark 4.8 in the end option I and II are inverted by mistake	Correctness of algorithm proposed
+However, attack in Wasserstein distance and some other methods can also do so.	Missing theoretical comparisons
+Generative replay also brings the time complexity problem since it is time consuming to generate previous data.	Lack of discussion of performance of method on different datasets
+Isn't this just restating the point made in the first sentence?	Unclear description of method
+In particular, I believe that any algorithms you compare against, you should optimize both G and theta, since optimizing purely the hardware is unfair.	Correctness of algorithm proposed
+I think the main point of transfer over a regular generative model that goes from labels to audio is precisely that it can be done without label information.	Correctness of algorithm proposed
+"-	Attention should be given to the notation in formulas (3) and (4)."	Unclear description of method
+"2.	Data size is too small, and the baselines"	Less datasets used
+Third, the writing in the paper has some significant lapses in clarity.	3. The paper is not nicely written or rather easy to follow.
+The empirical evaluation is quite weak- one sparsity setting, two baselines, one dataset	Lack of realistic datasets used in experiments (small siz, synthetic)
+6. On a lighter note, I don't believe using a coffe-brewing machine has a 'universally invariant structure' of coffee-making. That's a luxurious way of making coffee :) In the developing world, we still need to boil water, pour coffee powder in it, etc., all without a coffee-brewing machine.	Incomplete details on perfromance of the method
+"- The term ""sketch"" is used in Algorithm1, like 10, before 'sketch' is defined!!"	Unclear description of method
+1. The proxy f(z) does not bear any resemblance to LP(z).	Incomplete details on perfromance of the method
+(W7) Alternatives to CFS / Computational concerns: A big concern I had was the computational expense of the proposed approach. Unfortunately I did not see any discussion about this in the paper or empirically.	Incomplete details on perfromance of the method
+"Some statements don't make sense, however, eg. ""HSIC-based estimators tend to have loose confidence intervals due to the need to bound generalization error of kernels f and g on unseen data points."	Unclear description of method
+They are an exercise in applying standard formalism to this problem, without really showing any significative advantage of replica exchange.	Incomplete details on perfromance of the method
+It is unknown the used model is a new model or existing model.	Unclear description of method
+As such, I find it surprising that simply storing instances would do as poorly as stated in this paper which says cannot provide enough diversity.	Correctness of algorithm proposed
+For example, the related works paper would read better if it wasn't one long block (i.e. break it into several paragraphs)	Improper writing of realted work section (as in 1 paragraph rather than multiple for related work, explanation of somepapers, etc)
+However, my concern is about the experiments.	Experimental study not strong enough
+This clipping will also introduce bias, this is not discussed, and will probably lower variance.	Unclear description of method
+Typo:. The “Inf” in Tabel 1	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+"11. Baseline 2 is actually referred to as ""usage baseline"" but this name is not introduced in the itemized part."	Improper writing of realted work section (as in 1 paragraph rather than multiple for related work, explanation of somepapers, etc)
+Thus, it might be helpful to test the result on another dataset (e.g. WikiText).	Less datasets used
+For e.g. the results on the oscillating behavior of Dirac-GAN are described in related works (e.g. Mescheder et al. 2018), and in practice, WGAN with no regularization is not used (as well as GAN with momentum, as normally beta1=0 in practice).	Missing baselines
+In my opinion, to support the above claim, shouldn’t the authors provide a similar table as Table 1, directly comparing the certified radii of the natural images and adversarial images?	Incomprehensible tables and figures (what is the point of the plot, no decription of figure in main text, etc)
+While the use of a GAN in general will make the results less blurry and visually appealing, it does not necessarily mean that the samples it generates are going to be plausible or better.	correctness of results presented is questionable(eg., metrics, complexity, etc)
+Since the results are far from state of the art, a clean and neat presentation of the theoretical advantages and contributions is crucial.	Improper explanation of results (as in advantages, why are results better, etc)
+The first point would be: what's the meaning of synthetically generating training curves other than proving that transformer achieves good performance in modeling discrete distribution? Most practical problems would not have the same distribution as the previously gathered public dataset, thus the data is not representative, and synthetic training curves just does not make sence.	Less datasets used
+The paper currently only mentions the most related work for the proposed method,  using the whole section 2 to describe VCL and use section 3 to describe FSM and half of section 5 to describe SSR.	Incorrect baselines used
+3) The novelty of this paper is incremental as the theoretical results are extended from Cortes et al (2019) and Zhao et al (2018).	Incremental novelty of method as compared to related work
+However, it seems the only Figure showing D’s loss when unconstrained is Figure 26, in which it is hard to notice any significant jump in the loss.	Incomplete ablation in terms of tables and figures
+However, as the authors acknowledge the overall simplicity of the tasks being evaluated with mostly marginal improvements makes the overall evaluation fall short.	generalizability of results is questionable
+While the section 4 has a discussion on related papers, there's no systematic experimental comparison across these methods.	Incorrect baselines used
+Although experiments show that learning such representations are beneficial for low-shot setting of SVHN, it is not clear whether such improvement generalizes to more realistic datasets such as ImageNet.	Limited generalizability of claims on other datasets
+"Perhaps I missed it, but I believe Dan Ciresan's paper ""Multi-Column Deep Neural Networks for Image Classification"" should be cited."	Incorrect citation
+After reading, the reviewer cannot understand why the user should bother to use hyperbolic representations that are more complex to compute in GCNs, given that the experimental results are roughly the same.	Missing explanation of utility of proposed method
+One main concern is, how general this approach would be? As it is a good extension for Neural LP, it is not clear that the framework of Neural LP is flexible or powerful enough in general.	Incomplete details on perfromance of the method
+Does the discriminator exclude the poisoning data according to certain rule?	Missing ablation study (how to generalize findings, what happens if some changes are done to the method, etc)
+4. The authors hypothesize that “stronger augmentation can result in disparate predictions, so their average may not be a meaningful target.” However, they do not show any analysis to support this hypothesis.	Lack of analysis
+Overall, I like the approach of the proposed method, especially tuning coefficient during training procedure although novelty in the theoretical analysis is somewhat limited.	Limited novelty in theoretical contribution
+It does intuitively makes sense, but more mathematical definition (e.g., dimensionality) may be needed.	Incomplete details on perfromance of the method
+Moreover, comparison with some of the DA baselines (ADDA[1], DSN[2]) is missing.	Limited improvement over baselines
+The structure is obtained by the shared and sparse rows of matrix A. I would like the authors to comment on how the studies will be affected by this property of the common networks.	Incomplete details on perfromance of the method
+The experiments use fairly small datasets, where the performance can be largely influenced by how good the feature extractor backbone is (e.g. training on more data and using deeper architecture would warrant better performance, and thus may change the conclusion).	Lack of realistic datasets used in experiments (small siz, synthetic)
+Likewise looking at a difference of weight vectors seems arbitrary in other ways as well.	Correctness of algorithm proposed
+Why is the random seed being used to compare the performance of different arms? Do you instead mean that s and s’ are two values of the arm in Figure 4?	Incorrect claims about performance in tables and figures
+The primary difficulty in reviewing this paper is the poor presentation of the paper.	3. The paper is not nicely written or rather easy to follow.
+- For semi-supervised classification, the paper did not report the best results in other baselines.	Missing baselines
+It’s not obvious to me how useful the ME bias would be when there is a large number of classes since the probability assigned to the true novel class with a perfect ME bias would be 1 / (# unseen classes).	Unclear description of method
+If the two NNs used in DNN and DNN(resized) are different, I believe it’s still possible to apply the algorithm in DNN(resized) to the NN used in DNN, and get a full trace in the figure as noise and projection changes, which would lead to more fair comparison.	Missing theoretical comparisons
+- evaluated models (feed-forward NNs and LSTMs) are very basic and far from current SotA architectures	Incomplete details on perfromance of the method
+For example, it is not clear the strong emphasis on the robust MDP formalization and the fact that MCTS finds a Nash equilibrium.	Unclear description of method
+The results and discussions in the main part of the paper are too light in my opinion; the average model accuracy across modules is not an interesting metric at all, although it does show that the Transformer performs better than recurrent networks.	generalizability of results is questionable
+-The conclusions of the study were suggested by previous papers or are rather expected: adversarial transfer is not symmetric: Deep models less transferable than shallow ones, averaging gradient is better	-The conclusions of the study were suggested by previous papers or are rather expected: adversarial transfer is not symmetric: Deep models less transferable than shallow ones, averaging gradient is better
+Then, the important hyperparameter of the method---threshold---seems to be hard to select (both in sections 4.1 and 4.2).	Unclear description of method
+Currently it is still missing discussion such as, when SASNet would perform better and when it would perform worse, what it is that the state of the art features can’t capture while SASNet can.	Incomplete details on perfromance of the method
+The unsupervised results are more interesting but not very much explored (a single set of sampled faces).	generalizability of results is questionable
+The method description was a bit confusing and unclear to me.	Unclear description of method
+It’s not obvious to me that ME bias will provide a significant advantage in a one-shot or few-shot learning setting - i.e. how useful is having made a better initial guess (which is random amongst the unseen classes) after you gain some specific information about the target class? Perhaps the benefit is small relative to that of the one-shot or few-shot information gained - I think this needs to be quantified empirically.	Incomplete details on perfromance of the method
+The submission could maybe improved by segmenting the work into intro / related / background (with clear equations presenting the existing GP) / analysis / approach / experiments	Limited improvement over baselines
+"1. In Section 2, I find the sentence ""We follow a similar intuition but instead of decomposing a 1D signal of time into its components, we transform the time itself and feed its transformation into the model that is to consume the time information"" really unclear. Could you rephrase it?"	Incomplete details on perfromance of the method
+5. On relational detection task, is there a way to compare with the STOA method on some specific data split? This will leads to much more convincing results.	Incomplete details on perfromance of the method
+"A weighted k-means solver is also used in [2], though the ""weighted"" in [2] comes from second-order information instead of minimizing reconstruction error."	Not much novelty in methodology (previous works already studied these methods, similar motiation of methodology)
+- No comparison has been made between their approach and other previous approaches.	Incorrect baselines used
+What probability term does it correspond to? It is supposed to make probabilities of different cardinalities comparable, but the exact mechanism is unclear.	Unclear description of method
+"- In the appendix, the statement ""Sarkar (2011) show that a similar statement as in Theorem 2 holds for a very general class of trees"" is confusing to me. The ""general class"", as far as I know, is actually *all* trees, weighted or unweighted."	incorrect claims for related work
+"As previously mentioned in public comments on this forum, some points in the paper are not very clear; specifically regarding the loss function, the definition of ""edge-to-edge"" convolutions and generally the architectural choice related to the conditional GAN discriminator."	Missing details on methodology (eg., use of notation, use on tasks, etc)
+One would at least expect an after-the-fact interpretation for the weighted tensor term and what this implies with regard to their method and syntactic embedding compositions in general.	Incomplete details on perfromance of the method
+- In the empirical results, the performance of the proposed method and Reg-GAN (from the numerics of GAN paper) are quite similar. Are there instances that the proposed approach significantly improves the stability of practical GAN architectures?	Incomplete details on perfromance of the method
+"- I don't understand why the authors say that their space ""interpolates smoothly"" just because the limit in the curvature is the same from the left and right side."	Correctness of algorithm proposed
+- Why does temporal correlation reduce the non-stationarity of the MARL problem?	Incomplete details on perfromance of the method
+The overall presentation could be better, and I would encourage the authors to tidy the paper up in any subsequent submission.	3. The paper is not nicely written or rather easy to follow.
+1: The authors show no benefit of this scheme except perhaps faster convergence.	While this is a new and interesting task, the contribution (as discussed above in “pros” above) is somewhat limited.
+A naive approach to estimate coefficient with single-source domain discrepancy measures such as [1]Mansour (2009), [2,3] Ben-David(2007, 2010), [4] Kuroki et al (2019), and W1-distance is not considered.	Limited improvement over baselines
+Why? If we are learning the distribution, would not it make sense to sample all architectures only after training the supernet at our best?	Missing details on methodology (eg., use of notation, use on tasks, etc)
+This statement is ambiguous and potentially unsupported by evidence. how do you define complex? that can or that did discover?	Correctness of algorithm proposed
+It is well-written from a syntactical and grammatical point of view, but some key concepts are stated without being explained, which gives the impression that the authors have a clear understanding of the material presented in the paper but communicate only part of the full picture to the reader.	3. The paper is not nicely written or rather easy to follow.
+- The experiments show good results compared to existing algorithms, but not impressively so.	Need more experimental results
+Can you clarify how you view the relationship between the approaches mentioned above?	Correctness of algorithm proposed
+While the motivation is nice, I find the results (especially in the unguided setup) underwhelming.	generalizability of results is questionable
+- Lack of clarity in the following passage: “In our setting, each point xi in the point cloud can be considered to correspond to single images when we train GANs over images”	Unclear description of method
+This is true throughout; as stated before it is not clear how many parameters and how much memory these methods need, which makes it impossible to compare.	Missing theoretical comparisons
+-The experimental section do not clarify the benefits of the proposed approach.	-The experimental section do not clarify the benefits of the proposed approach.
+Although this extension seems to be easily derived using the contributions made at point 2.	Limited novelty in theoretical contribution
+Perhaps the authors had no salient observations for loss, but explicitly stating such would be useful to the reader.	correctness of results presented is questionable(eg., metrics, complexity, etc)
+2. The distribution proposed in section 3.2 assumes independence between the elements $x_j$. This seems problematic for some relatively simple problems.	Correctness of algorithm proposed
+What instead is missing is an answer to the question: Is it worth using a neural graph? what are the advantages and disadvantages compared to previous approaches?	Improper comparison of related work in terms of implementation
+- Lack of sufficient technical detail on models and dataset	Lacking details on datasets
+Generalizing this to the multi-channel input as the next step could make the proof more accessible.	Unclear description of method
+At a high level, the idea of imposing a mixture of gaussian structure in the feature space of a deep neural network classifier is not new.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+- How many samples did you use from p(theta|x) during training?	Limited generalizability of claims on other datasets
+This paper has problems with clarity/polish and experimental design that are sufficiently severe	Lack of discussion of experimental setup (conclusion from experiments, poor experimental details, etc)
+I believe the primary claim of this paper is neither surprising nor novel.	Overall not original enough (primary claim, limited evaluation, limited novelty)
+I also find weird the way that the authors arrive to their final objective in Equation (5).	Missing details on methodology (eg., use of notation, use on tasks, etc)
+- Baseline missing: Random actions from expert	Missing baselines
+In the start of Section 3, it is not clear why having the projection be sparse is desired.	Unclear description of method
+- The paper makes use of a result from the David MacKay textbook	Incorrect assumptions as compared to related work
+Moreover, the main difference between math problems and other problems is that there are math expressions; I do not think that using words/concept labels only is enough without touching on the math expressions.	Correctness of algorithm proposed
+The paper also misses several powerful baselines of semi-supervised learning, e.g. [1,2].	Missing baselines
+Did the authors also examine the relationship between mutual information and generalization error for CIFAR data sets? Does it not make sense to examine this for all (most of) the setups considered in Table 4, 8, and 9.	Less datasets used
+- some parts of the paper are quite unclear	3. The paper is not nicely written or rather easy to follow.
+On the other hand, the authors give no evidence, empirical or otherwise, that their method is useful on any downstream tasks.	Incomplete details on perfromance of the method
+* the ablation study designed to compare with a Gauss-Newton-like approach does not seem correct.	Correctness of algorithm proposed
+The experimental results presented were all done on small synthetic datasets and it’s hard to evaluate whether the method is practically useful.	Lack of realistic datasets used in experiments (small siz, synthetic)
+In numerical experiments, there is no comparison with major competitors besides random sampling in the active learning setup.	More experiments needed with related work
+The authors do not thoroughly explain the motivation of this paper.	Limited contribution in problem definition
+Doesn't the classification loss have a dependency on the input condition?	Missing details on methodology (eg., use of notation, use on tasks, etc)
+-Is there any reason not comparing the proposed algorithm with other compression schemes? (e.g., network pruning and low-rank approximation)	Incomplete details on perfromance of the method
+It is unclear, why one should use the proposed duality gap GAN.	Limited novelty in theoretical contribution
+- The equation (1) should contain \rho, not p.	Unclear description of method
+Though the Bayesian inference using GAN is a natural idea, learning algorithms proposed in this paper are simple and are not intensively developed.	Limited novelty in theoretical contribution
+- what is the benefit brought by the 'Structural Knowledge' transfer? is this quantified anywhere? based on the description, I don't understand if this is an add-on to TabNN or whether it is incorporated in TabNN.	Correctness of algorithm proposed
+In this way, we can easily see that the proposed framework is a stochastic version of proximal gradient descent.	Limited novelty in theoretical contribution
+- impact: the results achieved in the experiments are very small improvements compared to the baseline of RGCN (~ +0.01 in two experiments and ~ -0.04 in another) and often these small variations in results can be compensated with better baselines training (e.g. better hyper-params, ...)	Need more experimental results
+2. Is it reasonable to assume some constraints on how much data we can get from the blackbox generator?	Less datasets used
+(5) Due to the mean policy approximation, does the mean policy depend on \phi?	Missing details on methodology (eg., use of notation, use on tasks, etc)
+4. Comparison with past works.	Missing baselines
+I must probably be missing something, and I encourage the authors to clarify what the main novelties are when compared to the several papers by Dupuis & al.	Incremental novelty of method as compared to related work
+This shows itself in the results; i.e., the proposed algorithm is either negligibly performing better than GBDT or when  GBDT dependence removed, it performs worse. It seems to me	Generalizability of results in terms of method parameters (only applies for some number of parameters, only for these type of matrices, etc)
+Although the paper proposes an interesting framework I would argue that it is a “green apple” in the sense that authors need to motivate the approach better and expand the contribution beyond solving a particular instance.	Limited insights based on design choices
+I do not think that there is enough justification/demonstration for the fact that a general NN solution for Tabular Data invented.	Incomplete details on perfromance of the method
+It’s also unclear if the proposed method is more memory efficient, since the authors only unroll 4 iterations of it.	Incomplete details on perfromance of the method
+Also, the authors should compare with few more graphnet + transmission layer (GraphNetST) baselines with the graph layers: $P(X)_i = Ax_i + \sum_{j \in N(x_i, X)} Bx_j + c$ and the same single transmission layer $\mathbf{1}\mathbf{1}^TXB$ in PointNetST.	Incorrect assumptions as compared to related work
+2) The experimental results provided in this paper are weak.	Need more experimental results
+- Page 7 offers a result (expression for the Dirichlet form), which is hardly more than an exercise for anybody familiar with Markov Chains theory.	Not enough originality in results (not surprising)
+It would also be interesting to see an experiment where the labeled data has a skewed distribution of classes, but we provide the method with information about the true class distribution, and demonstrating that this information helps predictive performance.	Lack of realistic datasets used in experiments (small siz, synthetic)
+These classification datasets are often so close, that I do wonder whether even simpler methods would work just as well.	Lack of discussion of performance of method on different datasets
+E.g., in Table 1 and 2,  the best result of VAT (Miyato et al., 2017) is VAT+Ent, 13.15 for CIFAR-10 (4000 labels) and 4.28 for SVHN (1000 labels).	E.g., in Table 1 and 2,  the best result of VAT (Miyato et al., 2017) is VAT+Ent, 13.15 for CIFAR-10 (4000 labels) and 4.28 for SVHN (1000 labels).
+#3) There are several Equations that can be combined, such that to save enough white space in order to discuss further some actual technical details.	Unclear description of method
+Also, Table 1 is really confused. I would not understand the meaning if I am not familiar with the experiment settings.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+- I don't see a discussion about the downsides of the method (for example, the large number of triplet comparison examples needed for training; and possible methods to overcome this problem).	Correctness of algorithm proposed
+This is a thriving area that requires a careful literature review.	Missing literature review (some literature not included, misses baseline citations, etc)
+- The counter example at the bottom of page 2 is limited, in the sense that the oracle assumption seems highly non-realistic, casting doubt on the relevance of the argument.	Experimental study not strong enough
+How to understand this phenomenon? Does this mean that the distribution of the layer outputs will not change too much if the layer is deep enough?	Unclear description of method
+First, many details are missing, especially in the experiments, which makes the proposed method suspicious and non-convincing.	-The experimental section do not clarify the benefits of the proposed approach.
+- for Figure 6, there is not a clear conclusion.	Missing details in tables and figures (how some value as calculated in fig, some notation missing in fig, etc)
+The idea is an interesting one, but	Limited contribution in problem definition
+The labels of figures are hard to read.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+Given the title of the paper, it would have been nice if this paper explored more than just MNIST vs NotMNIST and SVHN vs CIFAR10, so that the readers can gain a better feel for when generative models will be able to detect outliers.	Less datasets used
+- Judging from Table 1, the proposed method does not seem to provide a large contribution.	Incorrect claims about performance in tables and figures
+"From the experimental perspective, the experimental evidence on ""invertible boolean logic"" does not seem to be very convincing for validating the approach."	design choices are questionable
+Likewise, it is not well explained what is the value of the learnt relationships, and how uncertainty and errors in the causal learning are relevant to the downstream use of the learnt model.	Unclear description of method
+A more rigorous setting is to, for N runs, each run splitting the validation and testing set differently.	Experimental study not strong enough
+It is better to explain the major difference and the motivation of updating the hidden states.	Incomplete details on perfromance of the method
+Lee et al. seem to make similar mistakes, and it is likely that their experimental design is also flawed.	Incorrect assumptions as compared to related work
+For example, if rules contain quantifiers, how would this be extended?	Incomplete details on perfromance of the method
+I would introduce the notation for t2v(tau) upfront and use that to define a(tau, k)[j] and f_j	Incomplete details on perfromance of the method
+"The proposed method adapt a previously presented hierarchical clustering method in the ""standard space"" (Griffiths et al., 2004) to an embedding space defined by a variational autoencoder model."	Not much novelty in methodology (previous works already studied these methods, similar motiation of methodology)
+The main issue of this paper is the fair comparisons with other works.	Missing baselines
+- Text on experiment figures is much too small.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+I believe that this paper is thus not in its final form and could be largely improved.	Lacking clarity overall (needs better presentation)
+Alternatively why not try using a factorization technique to reduce the rank and then see how well the method does for different ranks?	Missing theoretical comparisons
+- The conclusions focus on the importance of section 3 and	generalizability of results is questionable
+"- p8par1: ""approximate embedding $\alpha(e(\gamma'(...)))$ - $e$ is undefined and should probably be $e'$ (this is also the case in the caption of Fig. 5), and $c'$ should probably be included as well."	Incomplete ablation in terms of tables and figures
+Could it be that what we are seeing is the attack being denoised?	Correctness of algorithm proposed
+I think it is necessary to make it clearer how s_{post_read} and attn_copy are computed with the updated {h^i_t} and what u^i is expected to encode.	Unclear description of method
+"Furthermore PTB is not a ""challenging"" LM benchmark."	Incomplete details on perfromance of the method
+If one were to interpret the second one as the unnormalized distribution on z defined via the likelihood for c given z; even this has an issue because then the expression for KL where we plug the unnormalized density in place of the normalized need not be positive which is something they need to derive their bound.	Correctness of algorithm proposed
+The experimental results are actually less impressive than what are claimed in contribution and conclusion.	Need more experimental results
+This easy to see, because a composition of rotations of the form Rz(phi) Ry(nu) is not generally of that form.	Correctness of algorithm proposed
+- The experiments seem very similar to Wu et al. 2018, which is considered to be prior work under the ICLR guidelines.	Incremental novelty of method as compared to related work
+- Some assumptions are not explicitly stated.	Correctness of algorithm proposed
+4. Mean field analysis, although it lends an insight into the statistics of the activations, needs to connected with empirical observations.	Lack of analysis
+"10.	The title suggests that the paper studies multiple VQA models but only a single model is studied."	Unclear intro (eg. contributions)
+- Gradient starvation, Kaggle experiment: I'm not too convinced about the novelty/usefulness of this result. In the end, even a decision tree stump would stop growing after learning the dark/light feature as a discriminator.	- Gradient starvation, Kaggle experiment: I'm not too convinced about the novelty/usefulness of this result. In the end, even a decision tree stump would stop growing after learning the dark/light feature as a discriminator.
+Regarding contrastive explanations, experiments on datasets where distractor classes (y_probe) are present in addition to the class interest (y_true) seem important -- PASCAL VOC, COCO, etc.	Lack of realistic datasets used in experiments (small siz, synthetic)
+It is known that SGD with fixed step-size can not find the optimal for convex (perhaps, also simple) problems.	Incomplete details on perfromance of the method
+in practice. For most of newly proposed graph embedding algorithms, it is hard to convince	Incomplete details on perfromance of the method
+I vote for weak reject as (1) the paper makes a strong assumption about the availability of both the robot and object states which is not realistic in typical robotic manipulation applications and (2) the objective in the paper will not work if there is no notion of an “object” or object-state e.g.: this algorithm will not learn skills for a robot trying to control itself; hence, it is not truly a general purpose skill discovery algorithm but rather a skill discovery algorithm specifically meant for robot-object manipulation tasks.	Incomplete details on perfromance of the method
+Furthermore, the experimental section does not compare to other forms of hierarchical approaches for MARL, and generally only provides a single comparison to PPO & MADDPG.	Lack of comparison with related works
+In the current experiments there is a comparison only with CO algorithm and SGDA.	More variations of experiments needs to be added
+* There was some analysis of the augmented IMDB dataset, but none of the SNLI dataset.	Less datasets used
+The paper is overall well written and intuitive but limited in evaluation and novelty (see e.g. [1,2] ) with only limited modifications (sharing low-level controller) for the multi agent case.	Overall not original enough (primary claim, limited evaluation, limited novelty)
+Algorithm 1 does not include mitosis, which may have an effect on the resulting approximation.	Correctness of algorithm proposed
+- In Appendix F, Figure 20 d), the title seems wrong. It seems to report sigma^2 values, but the title says “losses”.	Incomplete ablation in terms of tables and figures
+- The use of random exploration for the discoverer is underwhelming. Have you tried different approaches? Would more advanced exploration techniques work or improve the performance?	Incomplete details on perfromance of the method
+- While the authors suggest that a latent model over the input distribution needs to be trained only once and is applicable off-the-shelf for any further contrastive explanations regarding any network operating on the same dataset -- learning such a model of the input space is an overhead in itself.	Correctness of algorithm proposed
+Overall, I think this paper has some interesting ideas, but those need to be fleshed out and clearly explained in a future revision.	3. The paper is not nicely written or rather easy to follow.
+However, in the proposed domain of tabular data, often data sets are significantly more high dimensional in reality and include at least one set of sparse large dimensional features	Less datasets used
+I think the paper could benefit from having this in the earlier sections.	3. The paper is not nicely written or rather easy to follow.
+"- the paper is poorly written and sentences are generally very hard to parse. For example, section 3.1 is opened by statements such as ""(we use) a multi-task evaluator which trains on the principal and auxiliary tasks, and evaluates the performance of the auxiliary tasks on a meta set""??"	3. The paper is not nicely written or rather easy to follow.
+Besides visible artifacts, what does it mean? Why does a smoother G reduces those artifacts?	Incomplete details on perfromance of the method
+- Architecture choice unclear: Why are $\sigma$ and $\omega$ separate networks.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+From the plots in Figure 2 and 3, it is hard to find the convergence of the method within 100 iterations.	Incomprehensible tables and figures (what is the point of the plot, no decription of figure in main text, etc)
+Moreover, the way classical models are casted under the InfoNCE principle is badly written: it assumes that readers have a very good knowledge of the models, and the paper does not show well the mapping between the loss function of each model and the InfoNCE criterion.	Unclear description of method
+The test set should not used before the best compression scheme is selected.	claims on the datasets is questionable
+My concern for this paper is reproducibility.	Because of this concern, I believe the results in the paper can only really characterize the learning close to convergence, since the network is already able to provide correct classification.
+The bijection needs to map training images to a high-density region of the Gaussian, and that aspect would make the model think twice before making the volume term too large.	Correctness of algorithm proposed
+While better than most of the baseline methods, the N^2 memory/computational complexity is not bad, but still too high to scale to very large graphs.	incorrect claims for related work
+The transfer metrics (MMD and kNN) are opaque to the reader: for instance, in table 1, is a knn score of 43173 qualitatively different than 43180?	Incomplete ablation in terms of tables and figures
+However, it seems a little unexplainable to apply a technique developed from classification to analyze RNNs, since the main task of RNNs never should be classification.	Correctness of algorithm proposed
+- The digression at the bottom of the first page about neural architecture search seem out of context and interrupts the flow of the introduction.	Unclear intro (eg. contributions)
+The results of the paper do not give major insights into what are the preferred techniques for training GANs, and certainly not why and under what circumstances they'll work.	Limited impact of results
+Unfortunately, the results are quite disappointing in terms of sound quality, and feature many artifacts.	generalizability of results is questionable
+It would be useful to have a table, like the one on the last page, which clearly shows the baseline vs. the random-projection model, with some description of the results in the main body of the text.	Improper presentation of results in tables and figures
+Especially given the very specific nature of the topic I miss a strong and clear path through the paper.	3. The paper is not nicely written or rather easy to follow.
+- I believe that in particular section 2 goes into too many mathematical details and subtleties that do not really add a lot.	Unclear description of method
+So the closure axiom of a group is violated.	Incomplete details on perfromance of the method
+(3) The experiment section lacks more detailed analysis which can intuitively explain how well the proposed method performs on the benchmarks.	Incomplete details on perfromance of the method
+Furthermore, there are no experimental results demonstrating the effect of the permutation head and the design choices above — if we could get by with only using the Hungarian algorithm, why bother classifying an exponential number of permutations? Do they help when added as an auxiliary loss?	More variations of experiments needs to be added
+"7.	The study is only performed on symbols which a very large training set (given the difficulty of the problem) and it not clear how well this generalizes to real images or scenarios with less training data."	claims on the datasets is questionable
+The experimental settings, e.g. how the train:test datasets are split, and hyperparameter settings, are not clearly given.	Not enough info on dataset and hyper-parameters
+However, the  transfer learning model is unclear.	Unclear description of method
+Why does it go to nearly zero around x = 0, while being higher in surrounding regions with more data?	claims on the datasets is questionable
+3) The paper only conducts comparison experiments with fixed-alpha baselines.	Lack of experimental details (no of images, sampling criteria, etc)
+What is the relationship between $\theta$ and $\tilde\theta$ exactly?	Unclear description of method
+2. While the primary motivation of the work is claimed to be 'mode collapse', it does not turn out from the submission what mode collapse is.	Unclear description of method
+"- My main concern is reproducibility: the authors employ a number of large architectures, complex loss functions, and regularizers / ""additional improvements""."	Missing details on methodology (eg., use of notation, use on tasks, etc)
+- Section 4.4.1: “DSO-NAS can also search architecture [...]”  -> “DSO-NAS can also search for architectures [...]”	Unclear description of method
+- Missing references on page 3	Incorrect citation styles
+It would have been very interesting to study the quality of interpolations on more models and datasets, and compare their generalization capabilities as well as the bias present in the different datasets.	Less datasets used
+- The search space of the proposed method, such as the number of operations in the convolution block, is limited.	Correctness of algorithm proposed
+* Comparison with other methods did not take into account a variety of hyperparameters.	Missing theoretical comparisons
+I feel like in the paragraph in questions, a lot of causes and effects are mixed up and more careful descriptions of the benefits of the algorithm would help.	Unclear description of method
+-- The algorithm proposed in the paper is very straightforward and just removes heavy hitters using oracle advice and then hashes everything else using the standard CountMin sketch.	Incomplete details on perfromance of the method
+Although a detailed discussion is provided related to the memory consumption between the proposed method and PipeDream, no detailed discussion is provided with respect to GPipe.	Unclear description of method
+The authors need to describe in detail the algorithmic novelty of their work.	Limited novelty in theoretical contribution
+Moreover, it seems strange that significant space was used to give equations describing simple embedding lookups (i.e., matrix multiplications with one-hot vectors), but the basic technical foundations of Transformers were not adequately explained.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+For example, the original GNN, ChebNet, etc. that leads to GCN can be mentioned.	Theoretical misunderstanding in methodology
+‘Our proposed approach represents the first physics-based simulation of its kind that supports MARL.’ This sentence remains unclear as the authors do not propose a simulation engine.	Unclear description of method
+The paper does not talk about settings where states of interest are not known, so all of the experiments are based on this strong assumption.	Experimental study not strong enough
+"For example, I don't understand what does it mean in ""However, if training data is complete, ..... handle during missing data during test."" Another example would be the last few paragraphs on page 4; they are very unclear."	Lack of discussion on datasets (size, motivation for use, etc)
+Since the paper relies so heavily on Lee et al., the authors should make an effort to summarize the approach in a mathematically precise way.	Unclear connection of method with related work (description of the related work it is based on, why earlier methods fail, etc)
+There should be some kind of comparison with test set results from other state-of-the-art work on these datasets.	There should be some kind of comparison with test set results from other state-of-the-art work on these datasets.
+Also, the compared methods don’t really use the validation set from the complex data for training at all.	Incomplete details on perfromance of the method
+That is, the current design hasn't well considered the local and global stability relation, but just simply sum them up.	Correctness of algorithm proposed
+"In the current form of evaluation, it is hard to say if there is any benefit of using the ""selection network"" that is the main novelty of the paper."	Limited novelty in theoretical contribution
+As with ensembles, clearly it only helps to have multiple agents (N>2) if the additional agents are distinct from f_1 (again without loss of generality this applies to g as well).	Correctness of algorithm proposed
+2. As to the results of the Pose2Pose network, I wonder if there are some artifacts that will affect the performance of the Pose2Frame network.	Generalizability of results in terms of method parameters (only applies for some number of parameters, only for these type of matrices, etc)
+For instance, how deep should a model be for a classification or regression task?	Incomplete details on perfromance of the method
+While it’s great that so much prior work was acknowledged, mentioning a paper once per paragraph is (usually) sufficient and increases readability.	Improper writing of realted work section (as in 1 paragraph rather than multiple for related work, explanation of somepapers, etc)
+In this light, experiments demonstrating comparisons between GANs and VAEs as the reference generative model for explanations would have made the paper stronger (as the proposed approach relies explicitly on how good the generative model is).	Lack of comparison with related works
+In section 4.1 the authors have a good discussion on what is wrong with other methods in order to motivate their approach but then they don't deliver significant evidence in the later part of the section.	Incomplete details on perfromance of the method
+- (W5) Multi-task learning: I did not see any mention or experiments of what can be expected when the representations are themselves trained on multiple tasks.	Experimental study not strong enough
+If this all is indeed the case, it is not surprising that the numbers the authors get in the experiments are so similar to WAE-MMD, because CWAE would be exactly WAE-MMD with a specific choice of the kernel.	Not enough novelty in experiments (seems similar to previous work)
+This seems to call the validity of the anomalous into question. Curious what the authors have to say about this.	Correctness of algorithm proposed
+2:    The authors should compare against several costs/algorithms (e.g. l_0 with OMP, l_1 with LARS, etc.), and across various N_0/sparsity penalties, and across several datasets.	2:    The authors should compare against several costs/algorithms (e.g. l_0 with OMP, l_1 with LARS, etc.), and across various N_0/sparsity penalties, and across several datasets.
+Can one walk the latent distribution of the algorithm agent and draw insights, which might lead into tailoring some algorithms that would be appropriate for some input distribution although in general inferior in terms of worst case guarantees?	Incomplete details on perfromance of the method
+Minimizing the F-distance as is usually done seems like the more direct and simple approach.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+-The average distortion metric (that’s unfavourable to your method anyway) doesn’t really mean anything as the constraint optimization has no incentive to find a value smaller than the constraint.	Correctness of algorithm proposed
+The experimental results are not very convincing because many importance baselines are neglected.	More experiments needed with related work
+Overall, I quite liked the paper and think it is well-written, but I believe the authors need to highlight at least one practical advance introduced by the CW distance (in which case I will raise my score).	Lacking clarity overall (needs better presentation)
+The purpose of the public set is explained only in section 5.2.	Unclear description of method
+The projection function there is no longer accepts a 3D point parametrized by 3 variables.	Unclear description of method
+The paper’s primary drawback is the restrictive setting under which the experiments are performed.	Experimental study not strong enough
+"Although the concept of ""task"" is not explicitly defined in this paper, the authors seem to associate each task with a specific class."	Incomplete details on perfromance of the method
+- The method is very confusingly presented and requires both knowledge of HAT as well as more than one reading to understand.	Unclear description of method
+The paper shows two applications (semi-supervised learning and novelty detection) and it is not clear that the proposed method outperforms existing GAN methods in the classification accuracy in MNIST/SVHN/CIFAR10 (Table 1) and existing sampling methods (Table. 3).	Incomplete details on perfromance of the method
+This should be explained in detail since Line 15 is the main output of the algorithm, which is fed (Line 16) to an existing solver for completing the assignment.	Correctness of algorithm proposed
+However, the assumption is too strong.	Correctness of algorithm proposed
+The evaluation section lacks experiments that evaluate the computational savings.	Experimental study not strong enough
+1) Provide stronger empirical results (these are not too convincing).	generalizability of results is questionable
+Indeed, the manuscript introduces sample complexity results to justify the benefits of the out-of-sample procedure (th 1), but it seems to me that these give an incomplete picture.	correctness of results presented is questionable(eg., metrics, complexity, etc)
+- Experiments were conducted only using a few recent results as baselines (ICM, forward dynamics, RND).	Experimental study not strong enough
+However, the method, particularly on the weight sharing, lacked a bit of important background on adaptive softmax.	Unclear description of method
+- The metrics are tightly coupled to the encoder used, and no exploration of encoder architectures is performed.	Correctness of algorithm proposed
+"In this sense, the proposed method is not comparable with ""noisy""."	Incomplete details on perfromance of the method
+First of all, the setup for the AE and VAE is not specified.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+Also, I had to go through a large chunk of the paper before coming across the exact setup.	Unclear description of method
+In this sense, claims about the low-variance of GO-gradient wrt to other reparametrization baed estimators should be removed, as they are the same.	Unclear description of method
+For instance, the omission of a results discussion section or a conclusion are clearly not reader friendly.	Improper explanation of results (as in advantages, why are results better, etc)
+It is not clear to me if NF would improve stability/performances in general games.	Correctness of algorithm proposed
+I think the paper does not fit this conference. It is better to be presented in a Demonstration section at a *ACL conference.	Reasons for rejection (not fit for conference, contains several weaknesses, etc.)
+- The equation (1) should hold for any \theta’, not \theta.	Unclear description of method
+First, it doesn’t label the X axis.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+As a matter of good implementation, one never takes the inverse of anything.	Correctness of algorithm proposed
+A clearer explanation of the theory here would help, as I think Fourier's theorem nicely supports your claims.	Unclear description of method
+However, it does exclude some popular activation families, such as the polynomial activation, which were proven effective in multiple areas.	Correctness of algorithm proposed
+I wonder the motivation of analyzing generalization of RNNs by the techniques established by Bartlett.	incorrect claims for related work
+The main problem with this paper is that it is difficult to identify its main and novel contributions.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+Another unjustified choice by the authors is their choice of weighing the Tensor term (when it is being added to two base embedding vectors) in the phrase similarity experiment.	design choices are questionable
+The authors explain how they trained their own model but there is no mention on how they trained benchmark models.	Incomplete details on perfromance of the method
+While the general description of the model is clear, details are lacking.	Unclear description of method
+Unfortunately this paper offers only weak results.	generalizability of results is questionable
+However, unlike as advertised, the paper does not address the domain shift issue in meta-learning, and the experiments lack thorough evaluation as the paper considers itself as a meta-learning paper and only compares to other meta-learning approaches without much comparison to domain adaptation papers.	More variations of experiments needs to be added
+4. Even when the authors formally introduce \sigma and \omega in 4.2, it is still not clear that why both of them are used for modelling the success probability.	Unclear description of method
+- it is unclear and possibly could be better explained why one needs to concatenate the goals (what would change if we would not concatenate but estimate state densities rather than trajectories?)	Incomplete details on perfromance of the method
+This second part is indeed what is used in the proof of the universality of the permutation invariant version of DeepSets, making the connection more visible.	Unclear description of method
+3. Shouldn't random indexing produce non-uniform numbers of non-zero entries depending on alpha? Why did you have an exact number of non-zero entries, s, in the experiments?	Lack of experimental details (no of images, sampling criteria, etc)
+In other words, although in the present results, the proposed NF-SGAN/WGAN outperforms the baseline, the reported performance of the baselines is worse than in related works on CIFAR10.	Missing baselines
+Therefore, an interesting baseline for the evaluation of the ICL approach would be a predefined, fixed attention map consisting of concentric circles with the image center as their center, to show that the proposed approach does more than just deemphasizing the corners of the image)	Improper comparison of related work in terms of implementation
+2. Missed citation: MnasNet [2] also incorporates the cost of architectures in their search process.	Missing literature review (some literature not included, misses baseline citations, etc)
+The related work section looks incomplete with some missing related references as mentioned above, and copy of a segment that appears in the introduction.	Improper writing of realted work section (as in 1 paragraph rather than multiple for related work, explanation of somepapers, etc)
+However, I believe the assumptions needed to show this point force the analysis to only characterize learning close to convergence.	Reproducibility of result
+* The use of fully connected layers also implies that it requires fixed length input, so windowing and stitching are necessary for it to be applied to recordings of arbitrary length. Why not train a convolutional model instead?	Correctness of algorithm proposed
+- The proposed approach is a fairly specific form of self-modulation.	Correctness of algorithm proposed
+Also, to demonstrate the superiority of the proposed method an appropriate comparison against previous work is needed.	Incorrect baselines used
+Does the controller also start from scratch? If so, why? Also, it is not clear what is the meaning of generations if the graph is fixed, can't it be learned altogether at once?	Correctness of algorithm proposed
+- My biggest concern is that the technical contributions of the paper are not clear at all.	Limited insights based on design choices
+3. Can the authors show if the decomposition is also useful for trigger patterns that are not necessarily regular shapes?	Incomplete details on perfromance of the method
+"Intuitively, these criteria are well motivated, but unfortunately, the combination of all the intuitions (including ""selection network"" with threshold) is not very principled."	Correctness of algorithm proposed
+ReLU network with 2 hidden layers, and it is unknown if it works in general.	Unclear description of method
+-  Is the romantic/ horror flips and their absence the only spurious thing in Figure 4 ?	Incomplete ablation in terms of tables and figures
+- The centralized nature is also semantically improbable, as the observations might be high-dimensional in nature, so exchanging these between agents becomes impractical with complex problems.	Incomplete details on perfromance of the method
+However, the Pareto front of the proposed method is concentrated on a specific point.	Incomplete details on perfromance of the method
+The figures are almost useless, because the captions contain very little information.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+There are some well-cited works that the authors may have missed. These are ultimately different approaches, but perhaps the authors can obtain some inspiration from these:	Missing literature review (some literature not included, misses baseline citations, etc)
+Issues of convergence seem like they deserve some discussion here and potentially could be examined empirically (is CEM-TD3 converging in the swimmer?).	Incomplete details on perfromance of the method
+Minor, 1/2 is missing in the last line of Eq 19.	Unclear description of method
+- Can this approach learn multiple factors as opposed to just two?	Incomplete details on perfromance of the method
+In addition, I would like to see some discussions whether this technique could be applied to off-policy learning as well.	Incomplete details on perfromance of the method
+The use of Glorot uniform initializer is somewhat subtle.	Incomplete details on perfromance of the method
+Although the proposed method does a good job in synthetic experiments, outperforming existing methods by a large margin, its performance on the numerical variants of Freebase/DBPedia dataset does not show consistent significant improvement.	Lack of ablation on different datasets/ sizes
+My concern is that the flaws in the method do not make it conducive to use as is.	Correctness of algorithm proposed
+"Fourth, please make it clear that the proposed method aims to estimate ""causality-in-mean"" because of the formulation in terms of regression."	Unclear description of method
+A lot of clarity is required on the choice of evaluation metric; for example choice of distance measure ?	Missing details on methodology (eg., use of notation, use on tasks, etc)
+What are the differences to your approach?	Theoretical misunderstanding in methodology
+I do not think this work is ready for publication.	Reasons for rejection (not fit for conference, contains several weaknesses, etc.)
+4. I think in the comparative experiments, the plain SGD should be added as another reference algorithm.	More variations of experiments needs to be added
+More experiments on datasets	Lack of realistic datasets used in experiments (small siz, synthetic)
+"(2) Eq. (3): is there a superscription ""(j)"" on z_canon in decoder?"	Unclear description of method
+- It would greatly benefit the reader if eq. 5 were expanded.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+2. I think that the claim that the use of neural networks with discrete inputs can approximately solve NP-hard optimization problems is an exciting one, which likely necessitates more experiments (or theoretical results), but as it stands I don't think it is a fundamentally different conclusion from the fact that this method provides a great scalable solution for the ordinal embedding problem.	More variations of experiments needs to be added
+My main concern with the paper is its limited applicability to robotic manipulation tasks with a clear divide between states of interest vs others.	Limited insights based on design choices
+All of the testbeds have been used previously.	Incremental novelty of method as compared to related work
+It is limited, however, in the sense that it (only) measures auto-encoding capabilities: to what extent can the shape be reproduced given a sample point cloud from the given shape.	Missing details on methodology (eg., use of notation, use on tasks, etc)
+However, I believe this is also the case in the MMD, since if one of the distributions is Gaussian or analytically known, then E[k(x,x')] in the MMD can be analytically computed.	Limited novelty in theoretical contribution
+(4) The writing quality is not satisfactory.	3. The paper is not nicely written or rather easy to follow.
+The Gamma approximation has no statistical guarantees, as stated explicitly in the HSIC testing paper of NeurIPS 2007.	Incomplete details on perfromance of the method
+-In k-means clustering (E-step and M-step), is it correct to multiply \tilde x to (c-v)?	Correctness of algorithm proposed
+The second weakness is experimental design.	Experimental study not strong enough
+Moreover, I don't think some of the presented experiments are necessary.	Experimental study not strong enough
+"In particular, the example in section 3.1 says that a noisy information bottleneck is introduced, but then says that the modified and unmodified models have ""training algorithms that are exactly equivalent."" I think this example needs to be clarified."	Lack of discussion of experimental setup (conclusion from experiments, poor experimental details, etc)
+Also experiment figures are extremely compact. Try using log scale or other lines to make the gaps wider.	Also experiment figures are extremely compact. Try using log scale or other lines to make the gaps wider.
+I don't really understand how learning lambda would _guarantee_ that the optimization will converge to a better solution.	Correctness of algorithm proposed
+However, what was not clear to me is how this reduces the non-stationarity of MARL.	Unclear description of method
+- The randomized weight is not very practical. Though it may be the standard approach of mean field,	Correctness of algorithm proposed
+Why do the authors directly average different loss for the discriminator and the classifer?	Missing details on methodology (eg., use of notation, use on tasks, etc)
+- the idea is trivial and simple. I don't think there's significant novelty here: all the components are existing and combining them seems very trivial to me.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+The bound obtained in Theorem 2 comes rather easily from the bounded assumption on the non-linearity and is this not very interesting.	Correctness of algorithm proposed
+The message of synthetic experiments would be stronger if more of them were available and if the comparison between LOE, TSTE, and OENN was made on more of them.	More experiments needed with related work
+- Lack of an extensive exploration of datasets	Less datasets used
+The results  are overall not very impressive.	Limited impact of results
+- The aspect ratio in Fig. 5 should be fixed.	Incorrect presentation of tables and figures (plots, typos in tables and figs. description of plot)
+- Your F and \tilde{f} are introduced as infinite series.	Unclear description of method
+No baseline comparison with GraphNets.	Limited novelty as compared to related work
+Since this work takes the approach of allowing stale weight updates, the author should also compare with existing distributed training approaches that use asynchronous updates, with or without model parallelism, for example, Dean et al., 2012.	Incorrect baselines used
+As is, the counter example proof itself is quite confusing: it would really help if the proof was more formal.	Unclear description of method
+It is a minor weak point that the algorithm can work only when the abstract state is obtained by the RAM state.	Correctness of algorithm proposed
+(1) The experimental results cannot show the usefulness of the proposed GCN.	Need more experimental results
+But I'm concerned with the novelty and contributions of this paper.	Overall not original enough (primary claim, limited evaluation, limited novelty)
+In the main text (up to Section 7), there is no mentioning of how the low-level controllers are learned, and how to combine PPO in a MARL partial parameter sharing setting.	Unclear description of method
+"With this dataset, it's a bit of a stretch to say there was ""only a 1 point drop in BLEU score"". That's a significant drop, and in fact the DynamicConv paper goes to significant lengths to make a smaller 0.8 point improvement."	In terms of evaluation, the authors only presented a few qualitative results on simple datasets, which is not comprehensive and convincing.
+"1.	Lack of technical novelty."	Limited novelty in theoretical contribution
+It is not clear how smaller RBMs (and their associated parameters) are combined to obtain the larger RBM model.	Unclear description of method
+- novelty: the additions proposed are small modifications to existing algorithms and there are other methods of attention on graphs which have been discussed in the paper but not directly compared to (e.g. this method builds heavily on Velickovic et al 2017)	Incorrect baselines used
+The experimental sections look rather mechanical. I would have put some results on the learned embedding. Or some demonstration of the embedded history or probability to intuitively convey the idea and how it works.	Missing interpretation of results due to missing related work
+For example, the number of labeled examples in Table 1 is fairly large and inconsistent (4K, 1K, 10K for the 3 organic datasets).	Less datasets used
+J_MLM is also not clear since x_i is never defined (I assume it is x_{i:i}).	Unclear description of method
+Also, try using the consistent dimension for x throughout the paper, it confuses the reader.	Theoretical misunderstanding in methodology
+You have 3 datasets worth of data for the regression task (it is still unclear, however, what is being used for evaluation), but it doesn't look like this is addressed in the larger scale experiments at all.	Lack of discussion on datasets (size, motivation for use, etc)
+Given that, the novelty of the paper is fairly incremental as it uses NerveNet to evaluate fitness and ES for the main design search.	Limited novelty in theoretical contribution
+For example, in Section 3.2, it can be made clear that the domain of the quantization function is the real and the codomain is a sequence k bits.	Unclear description of method
+However, there are a few, though not many, works in the literature trying to combine Choquet integral with deep learning.	Incremental novelty of method as compared to related work
+=> Environment: The experimental section of the paper can be further improved.	Experimental study not strong enough
+5. Adaptive kernels have only been tested in the first convolutional layer, would the adaptive kernels work well also in different layers?	Incomplete details on perfromance of the method
+In particular it is not applicable to learning e.g. sigmoid belief networks [Neal, 92] (with conditional Bernoulli units) and many other problems.	Limited novelty as compared to related work
+Overall, I find the paper a promising contribution. But until the authors provide a more thorough experimental evaluation, I hesitate to recommend acceptance.	Lacking clarity overall (needs better presentation)
+I find these assumptions too strong for the task of learning disentangled representation.	Correctness of algorithm proposed
+Without a proper comparison (formal and experimental) with these lines of work, the paper is incomplete.	More experiments needed with related work
+- How general is the proposed approach? How likely is it to generalize to other approaches such as Jigsaw (Doersch et al., 2015) and Exemplar (Dosovitskiy et al., 2016)? It would be good to comment on this.	Improper comparison of related work in terms of implementation
+The clarity of this paper needs to be strengthened.	3. The paper is not nicely written or rather easy to follow.
+The novelty of the algorithm itself is limited, since GAN and adversarial training are both minmax problems, and the original algorithm can be carried over easily.	Limited novelty in theoretical contribution
+A minor comment is that the mutual information I(., .) being a function of two variables suddenly became a function of a single variable in Eq. (1) and in the text which precedes it.	Unclear description of method
+- Typographical Errors: Section 3.1 repeats the use of D for a discriminator as well as the input distribution.	Correctness of algorithm proposed
+* The BiLSTM they use is very small (embedding and hidden dimension 50).	Incomplete details on perfromance of the method
+However, when there is no defense deployed in the training process, it is not intuitive to see why the proposed attack is more effective and persistent than the centralized attack, given that a smaller trigger usually results in a worse attack performance.	Correctness of algorithm proposed
+B. You don't schedule learning rates for your baseline methods except for a single experiment for some initial learning rate.	design choices are questionable
+The main problem is that directly predicting the context is intractable because of combinatorial explosion.	Need more interesting problem definition
+The only problem I see is that phrase similarity part is not convincing.	Correctness of algorithm proposed
+The descriptions of the datasets used are not clear, e.g., the number of classes for each data.	Less datasets used
+First, the mechanism provided has no mathematical justification--it seems fairly arbitrary.	Correctness of algorithm proposed
+Why not compare with Sparsely-Gated MoE?	Incomplete details on perfromance of the method
+In general, I feel this section could use some tighter formalism and justifications.	Incomplete details on perfromance of the method
+Why is the second objective log(#params) instead of just #params when the introduction mentions explicitly that tuning the scales between different objectives is not needed in LEMONADE?	Missing theoretical comparisons
+In sum, the paper has a very good application but not good enough as a research paper.	While sensible, this seems to me to be too minor a contribution to stand alone as a paper.
+* The issue of possible false positives due to sample dependence in fMRI data has again been ignored in the rebuttal.	Lack of discussion on datasets (size, motivation for use, etc)
+Although the idea seems to be interesting, the paper seems to be a bit incremental and is a simple application of existing GAN techniques.	The main reason is that from the narration, I cannot figure out what is the idea or technique of other works and what is the contribution of this paper.
+It did also not match any numbers in Tab. 4 of the appendix.	Incomplete ablation in terms of tables and figures
+Although the method the authors suggest is a plausible way to explicitly model the relationship between syntactic pairs and to create a combined embedding for them, their presentation does not make this obvious and it takes effort to reach the conclusion above.	Unclear description of method
+- It would be nice if more network architectures were analysed (such as VGG and DenseNets).	Lack of analysis
+A. You demonstrate the results on CIFAR-10 for 10% error rates which corresponds to networks which are far from what is currently used in deep learning.	generalizability of results is questionable
+The proposed model seems like a straightforward extension of the nCRP with a deep model hanging off the end of it.	Limited novelty in theoretical contribution
+I maintain my concerns that the experiments are limited and do not showcase the individual benefit of using explicit information placement.	Experimental study not strong enough
+Viewing it as a “duality gap” seems to be far from the practical training.	design choices are questionable
+- Sim(delta) should be Dissim(delta) which measures the dissimilarity between channels.	Correctness of algorithm proposed
+- In order to pre-train the discriminator network, additional (s,a,s') experiences are required, thus it seems difficult to say that it is better for exploration than VIME.	Correctness of algorithm proposed
+"8. The itemized part in 5.3, ""...carefully selected baselines: 1.xxx, 2.xxx, 3. xxx, 4. xxx"". However, both 3 and 4 are not baselines!"	Incorrect assumptions as compared to related work
+Comparing to this approach, I wonder if it would be better to provide samples that exhibit a particular factor, or samples that conceal the factor?	Less datasets used
+However, my criticisms remain that the paper is a simple combination of cycle GAN and prototypical networks, and lacks new insights/novelty.	Limited novelty in theoretical contribution
+While the presentation is clear and the evaluation of the model is thorough, I am unsure of the significance of the proposed method.	Limited insights based on design choices
+The major concern I have is that the ensemble of MC-Dropout models is not an approximation of the posterior anymore.	Correctness of algorithm proposed
+(2) When viewed in this way, CW-distance introduced in Eq (2) closely resembles the unbiased U-statistic estimate of the MMD used in WAE-MMD [1, Algorithm 2].	Limited novelty in theoretical contribution
+iv) Finally, the reported results are mostly qualitative.	generalizability of results is questionable
+(d) In Figure 2, it is unclear to me how the 1/f^2 law is observed in (a) but not in (c) or (e).	Missing details in tables and figures (how some value as calculated in fig, some notation missing in fig, etc)
+However, the proposed technique does not seem to be handling the problem foundationally well.	Correctness of algorithm proposed
+"4. I do not understand this: ""to fit well the method overfitting rate"" in Section 3.3."	Unclear description of method
+1. Even though K-matrices are aimed at structured matrices, it would be curious either to empirically compare K-matrices to linear transformations in fully-connected networks (i.e. dense matrices) or to provide some theoretical analysis.	More experiments needed with related work
+The negatives are that the paper does not really show this modified DNC can solve a task that the original DNC could not. As the authors also admit, there have been other DNC improvements that have had more dramatic improvements on bAbI.	Limited novelty in theoretical contribution
+Section 5 is based on a 2nd order expansion on the $log p(x)$ given by a deep network -- I shouldn't be the judge of this, but from a realistic perspective this does not mean much.	Correctness of algorithm proposed
+"And the analysis of the ""dynamic range"" of the algorithim is missing."	Lack of analysis
+Either case, I don't think we can have the inequality in eq. (5).	Correctness of algorithm proposed
+Significance: Below average	While sensible, this seems to me to be too minor a contribution to stand alone as a paper.
+To continue with the experimental evaluation, I found the plots with the predictive uncertainty in Figure 3 a bit confusing.	Incomprehensible tables and figures (what is the point of the plot, no decription of figure in main text, etc)
+It seems that the sampled reconstruction results (Fig. 8) are not as good as VAE on CIFAR10.	generalizability of results is questionable
+Table 1 tries to provide some comparisons on Atari, however number of samples is different for different methods making the comparisons invalid.	Incomplete ablation in terms of tables and figures
+- What is the choice of beta in the beta-VAE training objective?	Unclear description of method
+1. The formulation uses REINFORCE, which is often known with high variance.	Incomplete details on perfromance of the method
+Since the alt-az convolution is not isotropic and maps between scalars on S2, it cannot be equivariant.	Correctness of algorithm proposed
