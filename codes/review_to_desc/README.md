@@ -7,7 +7,7 @@ We use the same file main.py to train different models:
 The data can be created in multiple forms. You need to do the following to generate different splits on the data:
 1. Split on attitude roots. This will save the data in ```data``` folder
 ``` python
-        python create_data.py
+python create_data.py
 ```
 
 2. For finetuning, change the train test and dev files as needed for each of the folders
