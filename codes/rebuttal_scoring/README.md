@@ -18,13 +18,13 @@ We also use some abbreviations for the pre-trained models as well:
 
 We can first create the data in the format required for scoring.
 ``` python
-        python prepare_dataframes.py
+python prepare_dataframes.py
 ```
 The data used in our work is provided in the data folder. You can change the train, dev and test aspects used for splitting the data initially (which we load from pkl files).
 
 We first do hyper-parameter search using following:
 ``` python
-        ./hyperparameter_tuning.sh
+./hyperparameter_tuning.sh
 ```
 We change the model names to do the hyper-parameter tuning. The script requires model_name and model_prefix. For eg., in the shell script, the model_name is 'roberta-base' for pre-trained roberta and the model_prefix is 'roberta_pre'. 
 
