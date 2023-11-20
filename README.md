@@ -1,5 +1,5 @@
-# Exploring Jiu-Jitsu Argumentation for Writing Peer-Review Rebuttals 
-This repo includes codes that we used for the experiments in our EMNLP 2023 paper (main):
+# Exploring Jiu-Jitsu Argumentation for Writing Peer-Review Rebuttals 🥋
+This repo includes codes that we used for the experiments in our EMNLP 2023 paper (main Conference)
 
 ```
 Contact person: Sukannya Purkayastha
@@ -12,7 +12,7 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 ```
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
 
-### Dataset
+### Dataset 💾
 The dataset is contained in the folder ```data``` (available in https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 ). The code expects the data to be put in the data folder
 
 The top level are the attitude roots: 
@@ -40,7 +40,7 @@ The top level also has the folder ```canonical_rebuttals_and_descs```. This cont
 ├── all_cluster_descs.tsv (contains all the cluster descs)
 ```
 
-### Codes
+### Codes 🧑‍💻
 The codes used in this work are contained in the folder ```codes```.  Each of the tasks has separate README files inside.
 ```
 ├── end2end_review_to_canonical_rebuttal (canonical rebuttal generation task)
