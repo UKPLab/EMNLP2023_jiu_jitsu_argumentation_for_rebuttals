@@ -13,7 +13,8 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
 
 ### Dataset 💾
-The dataset should be contained in the folder ```data``` . You need to download the data from https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 ) and put it in the ```data``` folder
+The dataset should be contained in the folder ```data``` . You need to download the data from https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 ) and put it in the ```data``` folder.
+
 The top level are the attitude roots: 
 ``` 
 ├── Arg_other  
