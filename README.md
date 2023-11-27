@@ -12,6 +12,24 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 ```
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication.
 
+### Installation ⚙️
+The easiest way to run the code in this repo is to use Anaconda. If you haven't installed it, you can find the installation guidelines here: https://docs.anaconda.com/anaconda/install/
+
+Start by creating a new conda envirionment:
+```python
+conda create --name jitsupeer python=3.8
+```
+
+And activate it:
+```python
+conda activate jitsupeer
+```
+
+Install requirements:
+```python
+pip install -r requirements.txt
+```
+
 ### Dataset 💾
 The dataset should be contained in the folder ```data``` . You need to download the data from https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 ) and put it in the ```data``` folder.
 
