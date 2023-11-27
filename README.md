@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ### Dataset 💾
-The dataset should be contained in the folder ```data``` . You need to download the data from https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 ) and put it in the ```data``` folder.
+The dataset should be contained in the folder ```data``` . You need to download the data from https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4000 and put it in the ```data``` folder.
 
 The top level are the attitude roots: 
 ``` 
