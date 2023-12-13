@@ -71,12 +71,21 @@ The codes used in this work are contained in the folder ```codes```.  Each of th
 If you find this repository helpful, feel free to cite the following paper:
 
 ```
-@misc{purkayastha2023exploring,
-      title={Exploring Jiu-Jitsu Argumentation for Writing Peer Review Rebuttals}, 
-      author={Sukannya Purkayastha and Anne Lauscher and Iryna Gurevych},
-      year={2023},
-      eprint={2311.03998},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{purkayastha-etal-2023-exploring,
+    title = "Exploring Jiu-Jitsu Argumentation for Writing Peer Review Rebuttals",
+    author = "Purkayastha, Sukannya  and
+      Lauscher, Anne  and
+      Gurevych, Iryna",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.894",
+    pages = "14479--14495",
+    abstract = "In many domains of argumentation, people{'}s arguments are driven by so-called attitude roots, i.e., underlying beliefs and world views, and their corresponding attitude themes. Given the strength of these latent drivers of arguments, recent work in psychology suggests that instead of directly countering surface-level reasoning (e.g., falsifying the premises), one should follow an argumentation style inspired by the Jiu-Jitsu {``}soft{''} combat system: first, identify an arguer{'}s attitude roots and themes, and then choose a prototypical rebuttal that is aligned with those drivers instead of trying to invalidate those. In this work, we are the first to explore Jiu-Jitsu argumentation for peer reviews by proposing the novel task of attitude and theme-guided rebuttal generation. To this end, we enrich an existing dataset for discourse structure in peer reviews with attitude roots, attitude themes, and canonical rebuttals. To facilitate this process, we recast established annotation concepts from the domain of peer reviews (e.g., aspects a review sentence is relating to) and train domain-specific models. We then propose strong rebuttal generation strategies, which we benchmark on our novel dataset for the task of end-to-end attitude and theme-guided rebuttal generation and two subtasks.",
 }
 ```
