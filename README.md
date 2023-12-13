@@ -1,5 +1,8 @@
 # Exploring Jiu-Jitsu Argumentation for Writing Peer-Review Rebuttals 🥋
-This repo includes codes that we used for the experiments in our EMNLP 2023 paper (main Conference)
+This repo includes codes that we used for the experiments in our EMNLP 2023 Paper "Exploring Jiu-Jitsu Argumentation for Writing peer Review Rebuttals". We propose a new dataset , "JITSUPEER" which contains review sentences tagged with attitude roots, themes and canonical rebuttals. The attitude roots and themes are annotated based on identifying underlying reviewer beliefs. The canonical rebuttals are templates that can be customized and reused for writing rebuttals specific to certain attitude roots and themes. 
+<p align="center">
+<img src="img/Fig1_EMNLP_2023-1.png" width="500">
+</p>
 
 ```
 Contact person: Sukannya Purkayastha
@@ -70,7 +73,7 @@ The codes used in this work are contained in the folder ```codes```.  Each of th
 ### Citation
 If you find this repository helpful, feel free to cite the following paper:
 
-```
+```bibtex
 @inproceedings{purkayastha-etal-2023-exploring,
     title = "Exploring Jiu-Jitsu Argumentation for Writing Peer Review Rebuttals",
     author = "Purkayastha, Sukannya  and
